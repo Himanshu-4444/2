@@ -120,9 +120,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://clipmate-movies-4ed9e0985f26.herokuapp.com/".format(FQDN)
+    URL = "https://visual-movies-cec25966b68e.herokuapp.com/".format(FQDN)
 else:
-    URL = "http://clipmate-movies-4ed9e0985f26.herokuapp.com/".format(FQDN)
+    URL = "http://visual-movies-cec25966b68e.herokuapp.com/".format(FQDN)
 
 
 

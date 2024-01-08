@@ -17,9 +17,9 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '20389440'))
-API_HASH = environ.get('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
+SESSION = environ.get('SESSION')
+API_ID = int(environ.get('API_ID'))
+API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -48,15 +48,15 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batowaw488:0553569303@cluster0.76wnfl2.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "RIONETWORKS")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI')
+DATABASE_NAME = environ.get('DATABASE_NAME')
+COLLECTION_NAME = environ.get('COLLECTION_NAME')
 
 # Others
-VERIFY = bool(environ.get('VERIFY'))
+VERIFY = bool(environ.get('False'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL')
 SHORTLINK_API = environ.get('SHORTLINK_API')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK'))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://movierequestfree-a59484e5d0e2.herokuapp.com/".format(FQDN)
+    URL = "FQDN".format(FQDN)
 else:
-    URL = "https://movierequestfree-a59484e5d0e2.herokuapp.com/".format(FQDN)
+    URL = "FQDN".format(FQDN)
 
 
 

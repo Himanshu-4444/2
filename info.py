@@ -48,12 +48,11 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI')
-DATABASE_NAME = environ.get('DATABASE_NAME')
-COLLECTION_NAME = environ.get('COLLECTION_NAME')
-
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batowaw488:0553569303@cluster0.76wnfl2.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "RIONETWORKS")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Others
-VERIFY = bool(environ.get('False'))
+VERIFY = bool(environ.get('VERIFY'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL')
 SHORTLINK_API = environ.get('SHORTLINK_API')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK'))

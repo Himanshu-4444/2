@@ -52,7 +52,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://batowaw488:0553569303@
 DATABASE_NAME = environ.get('DATABASE_NAME', "RIONETWORKS")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Others
-VERIFY = bool(environ.get('VERIFY'))
+VERIFY = bool(environ.get('False'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL')
 SHORTLINK_API = environ.get('SHORTLINK_API')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK'))
